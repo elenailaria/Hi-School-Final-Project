@@ -1,0 +1,324 @@
+/* @import "../../assets/css/mixin.scss";
+
+
+.login {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  background-image: url(../../assets/2012-movie-collage31-scaled.jpg);
+}
+
+.login_form {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  // height: 900px;
+  background-color: #0f0c29d9;
+  border-radius: 10px;
+  box-shadow: 10px 0px 18px 16px rgba(0, 0, 0, 0.886);
+
+  @include respond(phone) {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 50px;
+    font-weight: 900;
+    font-size: 70px;
+    margin-bottom: 4rem;
+    margin-top: 10px;
+    text-align: center;
+    color: #f9f1f1;
+
+    @include respond(phone) {
+      margin-bottom: 3rem;
+      font-size: 2rem;
+    }
+  }
+
+  input {
+    width: 300px;
+    height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    outline: none;
+    background-color: #0f0c29e4;
+
+    @include respond(phone) {
+      width : 80%;
+    }
+
+    color: #fff;
+
+    &:focus {
+      border: 1px solid #000;
+    }
+  }
+
+  button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff64, #4ce3f799);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+  }
+
+  button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+  }
+
+  @keyframes pulse512 {
+    0% {
+      box-shadow: 0 0 0 0 #05bada66;
+    }
+
+    70% {
+      box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+
+    100% {
+      box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+  }
+  .linkChange {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    background-color: #0f0c29ae;
+    margin-top: 2rem;
+
+    font-size: 50px;
+
+    cursor: pointer;
+
+
+    &:hover p {
+      color: #fff;
+    }
+    p {
+      position: relative;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      text-decoration: none;
+      font-size: 50px;
+      margin: 0 auto;
+      font-weight: 900;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+ */
+
+
+
+
+ .logo_container {
+  height: 100vh;
+  width: 100vw;
+
+  background: linear-gradient(#141e30, #243b55);
+}
+
+.login_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 60px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+  
+}
+
+.login_box  .onclick {
+  all : unset;
+  cursor: pointer;
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+
+}
+
+.frame{
+  width: 0%;
+  margin:0 auto;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border: none;
+  margin-bottom: 80px;
+  
+}
+
+.login_box .user_box {
+  position: relative;
+}
+
+.login_box .user_box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login_box .user_box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login_box .user_box input:focus ~ label,
+.login_box .user_box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login_box form .onclick {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login_box .onclick:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #B3E5FC,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #B3E5FC;
+}
+
+.login_box .onclick span {
+  position: absolute;
+  display: block;
+}
+
+.login_box .onclick  span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1.5s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login_box .onclick  span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1.5s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login_box .onclick  span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1.5s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login_box .onclick  span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1.5s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+
+
